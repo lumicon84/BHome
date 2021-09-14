@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BHomeWork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CBH-xT-muf">
+                                <rect key="frame" x="15" y="259" width="384" height="588"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OWN-Qc-zpH">
+                                <rect key="frame" x="15" y="59" width="384" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="110-oa-bP2" userLabel="ButtonA">
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="66.5"/>
+                                        <state key="normal" title="ButtonA"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91C-wn-kr5" userLabel="ButtonB">
+                                        <rect key="frame" x="0.0" y="66.5" width="384" height="67"/>
+                                        <state key="normal" title="ButtonB"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZV-aQ-ax9" userLabel="ButtonC">
+                                        <rect key="frame" x="0.0" y="133.5" width="384" height="66.5"/>
+                                        <state key="normal" title="ButtonC"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="GGt-sX-lV6"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CBH-xT-muf" secondAttribute="trailing" constant="15" id="4GI-ms-eRN"/>
+                            <constraint firstItem="CBH-xT-muf" firstAttribute="top" secondItem="OWN-Qc-zpH" secondAttribute="bottom" id="6lH-EQ-dDi"/>
+                            <constraint firstItem="CBH-xT-muf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="A1p-XC-c6k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CBH-xT-muf" secondAttribute="bottom" constant="15" id="ESh-qa-tGH"/>
+                            <constraint firstItem="OWN-Qc-zpH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="bKB-Ea-xfR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OWN-Qc-zpH" secondAttribute="trailing" constant="15" id="dlU-u7-S28"/>
+                            <constraint firstItem="OWN-Qc-zpH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="nlF-12-hua"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonA" destination="110-oa-bP2" id="hDo-dl-ccg"/>
+                        <outlet property="buttonB" destination="91C-wn-kr5" id="Ve2-gd-2EO"/>
+                        <outlet property="buttonC" destination="vZV-aQ-ax9" id="nZs-Db-zCM"/>
+                        <outlet property="viewChartParent" destination="CBH-xT-muf" id="xmN-kL-c2P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="100.44642857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
